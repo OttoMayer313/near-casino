@@ -1,6 +1,6 @@
 {
 	"name": "near-casino",
-	"version": "0.0.1",
+	"version": "0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
