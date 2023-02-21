@@ -1,0 +1,57 @@
+{
+    "projectId": "nearCasino",
+    "projectName": "Near Casino",
+    "collections": [
+        {
+            "$id": "profiles",
+            "$read": [
+                "role:member"
+            ],
+            "$write": [],
+            "name": "profiles",
+            "enabled": true,
+            "permission": "collection",
+            "attributes": [
+                {
+                    "key": "balance",
+                    "type": "double",
+                    "status": "available",
+                    "required": true,
+                    "array": false,
+                    "min": -1.7976931348623157e+308,
+                    "max": 1.7976931348623157e+308,
+                    "default": null
+                }
+            ],
+            "indexes": []
+        }
+    ],
+    "functions": [
+        {
+            "$id": "createProfile",
+            "name": "createProfile",
+            "runtime": "node-16.0",
+            "path": "functions/createProfile",
+            "entrypoint": "src/index.js",
+            "execute": [
+                "role:member"
+            ],
+            "events": [],
+            "schedule": "",
+            "timeout": 5
+        },
+        {
+            "$id": "placeBet",
+            "name": "placeBet",
+            "runtime": "node-16.0",
+            "path": "functions/placeBet",
+            "entrypoint": "src/index.js",
+            "execute": [
+                "role:member"
+            ],
+            "events": [],
+            "schedule": "",
+            "timeout": 5
+        }
+    ]
+}
