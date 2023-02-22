@@ -1,5 +1,5 @@
 # 🎰 Near Casino
-[![Current Version](https://img.shields.io/badge/version-0.1-green.svg)](https://github.com/OttoMayer313/chatbot-zenkaruto)
+[![Current Version](https://img.shields.io/badge/version-0.1-green.svg)](https://github.com/OttoMayer313/near-casino)
 
 ![Cover](docs/screen-game.png)
 
